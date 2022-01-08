@@ -9,7 +9,7 @@ cd "$(dirname "$0")"
 
 #set the current working directory
 cwd=$(pwd)
-
+LC_ALL=C
 if [ .$nginx_enabled = .'true' ]; then
 
 	#database details
