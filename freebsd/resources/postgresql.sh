@@ -18,6 +18,7 @@ cd /tmp
 echo "Install PostgreSQL"
 
 #generate a random password
+LC_ALL=C
 password=$(cat /dev/random | env LC_CTYPE=C tr -dc a-zA-Z0-9 | head -c 20)
 
 #install message
